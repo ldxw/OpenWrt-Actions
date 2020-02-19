@@ -24,8 +24,8 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: '*.y1.config'
-  DIY_SH: '*.y1.diy.sh'
+  CONFIG_FILE: *.y1.config
+  DIY_SH: *.y1.diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
