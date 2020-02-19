@@ -15,7 +15,7 @@ on:
     branches:
       - master
     paths:
-      - 'usb.y1.config'
+      - '*.y1.config'
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -24,8 +24,8 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: usb.y1.config
-  DIY_SH: usb.y1.diy.sh
+  CONFIG_FILE: *.y1.config
+  DIY_SH: *.y1.diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
@@ -119,5 +119,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware_y1_usb
+        name: OpenWrt_firmware_y1_all
         path: ${{ env.FIRMWARE }}
