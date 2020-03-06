@@ -27,7 +27,7 @@ env:
   CONFIG_FILE: k2_8M.config
   DIY_SH: k2_8M.diy.sh
   FREE_UP_DISK: false
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
